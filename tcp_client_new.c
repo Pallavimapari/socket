@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 	//printf("after pthread create");
 	
 
-	//while(1){
+	while(1){
 	//clear the buffer
 	bzero(buffer,sizeof(buffer));
 	int buffer_count = 0;
@@ -81,7 +81,7 @@ int main(int argc, char* argv[])
 	bzero(buffer,sizeof(buffer));
 	read(sockfd,&buffer,sizeof(buffer));
 	printf("Msg from server : %s\n",buffer);
-	//}
+	}
 
 
 	close(sockfd);  // close the socket /file descriptor
